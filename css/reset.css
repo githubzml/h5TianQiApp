@@ -1,0 +1,17 @@
+/*重置浏览器默认样式*/
+body{
+	margin: 0 auto;
+}
+
+input{
+	border: none;
+	outline: none;
+	padding: 0;
+	background-color: transparent;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+</head>
+<body>
+
+	<div class="weather">
+		
+		<!-- 导航 -->
+		<div class="nav wow fadeInLeft">
+
+			<!-- 定位 -->
+			<div class="location">
+				<span class="location-icon"></span>
+				<span id="location-city" class="location-city"></span>
+			</div>
+
+			<!-- 搜索 -->
+			<div class="search">
+				<input id="search-box" class="search-box" type="text" name="" placeholder="输入城市名称">
+				<span id="search-icon" class="search-icon"></span>
+			</div>
+
+			<!-- 下拉菜单 -->
+			<div id="list" class="list">
+
+				<div class="list-title">
+					<span id="all-delete" class="all-delete">全部删除</span>
+					<span id="close" class="close">关闭</span>
+				</div>
+
+				<div id="list-tag" class="list-tag">
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 主体内容 -->
+		<div class="main">
+			
+			<!-- 实况天气 -->
+			<div id="weather-status" class="weather-status wow bounceInDown">
+				
+				<div class="weather-status-box">
+
+					<div class="weather-date">
+						<span id="date" class="date"></span>
+						<span id="day"></span>
+					</div>
+
+					<div class="weather-tem">
+						<div id="tmp" class="tem"></div>
+						<div class="weather-tem-icon">
+							<div class="box">
+								<div id="box-icon" class="box-icon"></div>
+								<div id="box-text" class="box-text"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wind">
+						<span id="wind-dir"></span>
+						<span id="wind-speed"></span>
+						<span id="wind-level"></span>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 二十四小时天气 -->
+			<div class="hours-weather wow rotateInUpRight">
+					<!-- 标题 -->
+					<div class="hours-title">24小时天气</div>
+
+					<!-- 每小时的天气 -->
+					<div class="hours-box">
+						<ul id="hours" class="hours">
+
+							
+
+						</ul>
+					</div>
+
+			</div>
+
+			<!-- 未来九天天气 -->
+			<div class="future-weather wow rollIn">
+				<!-- 标题 -->
+				<div class="future-title">未来9天天气</div>
+
+				<!-- 未来天气 -->
+				<div id="futire-weather" class="future-weather-box">
+
+					
+
+				</div>
+
+			</div>
+
+
+			<!-- 空气质量与生活指数 -->
+			<div id="air-life-box" class="air-life-box">
+				<div class="air-life">
+					
+					<!-- 标题 -->
+					<div class="air-life-title">空气质量与生活指数</div>
+
+					<!-- 列表 -->
+					<ul id="air-life-list" class="air-life-list">
+						
+						
+
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 加载提示 -->
+		<div id="tip" class="tip">
+			<div class="tip-line">
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="./js/wow.min.js"></script>
+	<script type="text/javascript" src="./js/rem.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+</body>
+</html>
